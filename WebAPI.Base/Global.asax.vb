@@ -1,11 +1,14 @@
 ﻿Imports System.Web.Http
-Imports System.Web.Optimization
 
 Public Class WebApiApplication
     Inherits System.Web.HttpApplication
 
     Sub Application_Start()
         GlobalConfiguration.Configure(AddressOf WebApiConfig.Register)
+
+        'get the keys loaded
+        Security.APIKeys.LoadKeys()
+
     End Sub
 
     Sub Application_PreSendRequestHeaders(ByVal sender As Object, ByVal e As EventArgs)

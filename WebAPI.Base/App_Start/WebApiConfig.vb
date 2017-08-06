@@ -8,7 +8,7 @@ Public Module WebApiConfig
         ' Web API configuration and services
 
         'authentication
-        'config.Filters.Add(New TokenAuthenticationAttribute())
+        config.Filters.Add(New Security.AuthenticationAttribute())
 
         ' Web API routes
         config.MapHttpAttributeRoutes()

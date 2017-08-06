@@ -1,7 +1,6 @@
 ﻿Imports System.Net
 Imports System.Web.Http
 
-<Security.TokenAuthentication()>
 Public Class ApplicationsController
     Inherits ApiController
 

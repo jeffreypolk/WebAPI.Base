@@ -8,6 +8,12 @@
             Result = False
             Messages.Add(New Message(MessageType.Error, Text))
         End Sub
+
+        Public Sub AddError(Text As String, Code As String)
+            Result = False
+            Messages.Add(New Message(MessageType.Error, Text, Code))
+        End Sub
+
     End Class
 
     Public Class Message

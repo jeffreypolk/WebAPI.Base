@@ -106,9 +106,7 @@
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Managers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -136,11 +134,15 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\BaseController.vb" />
+    <Compile Include="Classes\ActionResult.vb" />
+    <Compile Include="Classes\Helper.vb" />
+    <Compile Include="Classes\Settings.vb" />
+    <Compile Include="Models\ErrorCodes.vb" />
+    <Compile Include="Security\APIKeys.vb" />
     <Compile Include="Models\ApiToken.vb" />
     <Compile Include="Security\ClientIPAddress.vb" />
     <Compile Include="Security\Encryption.vb" />
-    <Compile Include="Security\TokenAuthenticationAttribute.vb" />
-    <Compile Include="Security\TokenErrorResult.vb" />
+    <Compile Include="Security\AuthenticationAttribute.vb" />
     <Compile Include="Security\TokenManager.vb" />
     <Compile Include="Controllers\TokensController.vb" />
     <Compile Include="Global.asax.vb">
